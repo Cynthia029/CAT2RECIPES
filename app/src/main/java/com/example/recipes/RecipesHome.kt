@@ -10,7 +10,7 @@ import com.example.recipes.data.Meal
 import com.example.recipes.data.Provider
 
 @Composable
-fun RecipeHomeContent( navigateToProfile: (Meal) -> Unit){
+fun RecipeHomeContent(navigateToProfile: (Meal) -> Unit){
     val Meals = remember { Provider.mealList}
     LazyColumn(
         contentPadding = PaddingValues(horizontal = 15.dp, vertical = 15.dp)

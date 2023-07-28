@@ -1,7 +1,7 @@
 package com.example.recipes.data
 
 import android.content.Context
-import com.example.fufuurecipies.R
+import com.example.recipes.R
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
 
@@ -65,7 +65,7 @@ object Provider {
                     "Once the eggs are cooked to your liking, remove the pan from the heat.\n" +
                     "\n" +
                     "Serve the mayai mwitu hot, either as a standalone dish or with accompaniments such as chapati, bread, or rice.",
-            mealImageId = R.drawable.img1
+            mealImageId = R.drawable.pancake
         ),
         Meal(
             id = 2,
@@ -101,7 +101,7 @@ object Provider {
                     "Serve: Once the meat is cooked and the ugali is shaped, it's time to serve Ugali Choma. Arrange the grilled meat on a platter and place the shaped ugali alongside it. Ugali can be served as a base for the meat or eaten by tearing off small portions and using it to scoop up the meat.\n" +
                     "\n" +
                     "Enjoy: Ugali Choma is traditionally eaten with hands, so dig in and enjoy the flavorful combination of the grilled meat and the soft, starchy texture of the ugali. You can also pair it with side dishes like sukuma wiki (collard greens) or kachumbari (a fresh tomato and onion salad) for a complete meal.",
-            mealImageId = R.drawable.img2
+            mealImageId = R.drawable.ugali
         ),
         Meal(
             id = 3,
@@ -149,7 +149,7 @@ object Provider {
                     "5.\tHeat the oil in a large pot or Dutch oven over medium-high heat. Fry the chicken pieces in batches until golden brown and cooked through, about 10-12 minutes per batch.\n" +
                     "6.\tServe the chicken with the sauce and your favorite sides.\n" +
                     "Enjoy!\n",
-            mealImageId = R.drawable.img3
+            mealImageId = R.drawable.kukuwet
         ),
         Meal(
             id = 4,
@@ -180,7 +180,7 @@ object Provider {
                     "3.\tAdd the chicken and cook until browned on all sides, about 5 minutes.\n" +
                     "4.\tAdd the rice, water, bay leaf, and garam masala. Bring to a boil, then reduce heat to low, cover, and simmer for 20 minutes, or until the rice is cooked through and the liquid has been absorbed.\n" +
                     "5.\tGarnish with cilantro and serve.\n",
-            mealImageId = R.drawable.img4
+            mealImageId = R.drawable.rice
         ),
         Meal(
             id = 5,
@@ -205,7 +205,7 @@ object Provider {
                     "3.\tHeat a large skillet over medium heat. Add a small amount of oil to the skillet.\n" +
                     "4.\tCook the meatballs in batches until browned on all sides, about 5-7 minutes per batch.\n" +
                     "5.\tServe the meatballs with your favorite sauce or pasta.\n",
-            mealImageId = R.drawable.img6
+            mealImageId = R.drawable.beef
         ),
         Meal(
             id = 6,
@@ -276,7 +276,7 @@ object Provider {
         ),
         Meal(
             id = 9,
-            name = "Kuku",
+            name = "Fried Chicken",
                     description = "Kuku, also known as Kenyan Chicken Curry, is a flavorful and aromatic dish from Kenya. It features tender chicken pieces cooked in a fragrant blend of spices, coconut milk, and tomatoes. Kuku is a popular and hearty meal enjoyed with rice, chapati, or ugali in Kenyan cuisine.",
                     duration = "•\tPreparation time: 20 minutes\n" +
                     "•\tCooking time: 40 minutes\n" +

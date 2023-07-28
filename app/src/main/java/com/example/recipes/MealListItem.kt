@@ -23,7 +23,7 @@ import androidx.compose.ui.unit.dp
 import com.example.recipes.data.Meal
 
 
-
+@Preview
 @Composable
 fun MealListItem(meal: Meal, navigateToProfile: (Meal) -> Unit) {
     Card(

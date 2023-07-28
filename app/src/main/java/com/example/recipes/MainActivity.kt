@@ -9,8 +9,8 @@ import androidx.compose.material3.Scaffold
 import androidx.compose.runtime.Composable
 import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
 import com.example.recipes.data.Meal
-import com.example.recipes.ui.theme.RecipesTheme
 import com.example.recipes.data.Provider
+import com.example.recipes.ui.theme.RecipiesTheme
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.MainScope
 import kotlinx.coroutines.launch
@@ -26,9 +26,9 @@ class MainActivity : ComponentActivity(), CoroutineScope by MainScope() {
         }
 
         setContent {
-            RecipesTheme {
+            RecipiesTheme {
                 MyApp { meal ->
-                    startActivity(RecipeActivity.newIntent(this@MainActivity, meal))
+                    startActivity(RecipesActivity.newIntent(this@MainActivity, meal))
                 }
             }
         }

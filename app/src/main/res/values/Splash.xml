@@ -3,7 +3,7 @@
     <style name="Theme.MyApp.MySplash" parent="Theme.SplashScreen">
         <item name="windowSplashScreenBackground">#FFFFFF</item>
         <item name="windowSplashScreenAnimatedIcon">@drawable/recipe</item>
-        <item name="postSplashScreenTheme">@style/Theme.FuFuuRecipies</item>
+        <item name="postSplashScreenTheme">@style/Theme.Recipies</item>
     </style>
 
 </resources>

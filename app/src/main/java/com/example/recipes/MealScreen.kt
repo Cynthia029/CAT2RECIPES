@@ -24,11 +24,10 @@ import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
-import com.example.fufuurecipies.R
 
 import com.example.recipes.data.Meal
 
-
+@Preview
 @Composable
 fun MealScreen(meal: Meal){
     val scrollState = rememberScrollState()
@@ -50,7 +49,7 @@ fun MealScreen(meal: Meal){
         
     }
 }
-
+@Preview
 @Composable
 private fun ProfileHeader(
     meal: Meal,
@@ -65,10 +64,10 @@ private fun ProfileHeader(
         contentDescription = null
     )
 }
-
+@Preview
 @Composable
 private fun ProfileContent(meal: Meal,containerHeight: Dp){
-    Column() {
+    Column {
         Name(meal = meal)
         ProfileProperty(label = stringResource(id =R.string.Description ), value = meal.description)
         ProfileProperty(label = stringResource(id =R.string.duration ), value = meal.duration)
@@ -79,7 +78,7 @@ private fun ProfileContent(meal: Meal,containerHeight: Dp){
     }
 
 }
-
+@Preview
 @Composable
 private fun Name(meal: Meal){
     Column(modifier = Modifier.padding(16.dp)) {
@@ -91,7 +90,7 @@ private fun Name(meal: Meal){
         
     }
 }
-
+@Preview
 @Composable
 private fun ProfileProperty(label:String, value:String){
     Column(modifier = Modifier.padding(16.dp)) {

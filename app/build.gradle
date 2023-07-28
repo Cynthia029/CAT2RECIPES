@@ -5,11 +5,11 @@ plugins {
 }
 
 android {
-    namespace 'com.example.fufuurecipies'
+    namespace 'com.example.recipes'
     compileSdk 33
 
     defaultConfig {
-        applicationId "com.example.fufuurecipies"
+        applicationId "com.example.recipes"
         minSdk 24
         targetSdk 33
         versionCode 1

@@ -7,7 +7,7 @@
         <item name="android:statusBarColor">@color/black</item>
     </style>
 
-    <style name="Theme.FuFuuRecipies" parent="android:ThemeOverlay.Material.Dark" />
+    <style name="Theme.Recipies" parent="android:ThemeOverlay.Material.Dark" />
     <style name="statusBarBackground">@style/grey</style>
 
 </resources>

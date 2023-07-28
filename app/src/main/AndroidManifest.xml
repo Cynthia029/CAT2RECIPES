@@ -10,11 +10,11 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.Recipes"
+        android:theme="@style/Theme.Recipies"
         tools:targetApi="31">
 
         <activity
-            android:name=".RecipeActivity"
+            android:name=".RecipesActivity"
             android:exported="false" />
         <activity
             android:name=".SplashScreenActivity"
@@ -30,7 +30,7 @@
             android:name=".MainActivity"
             android:exported="true"
             android:label="@string/app_name"
-            android:theme="@style/Theme.Recipes">
+            android:theme="@style/Theme.Recipies">
 
         </activity>
     </application>

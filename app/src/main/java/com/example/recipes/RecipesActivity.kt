@@ -6,10 +6,10 @@ import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import com.example.recipes.data.Meal
-import com.example.recipes.ui.theme.RecipesTheme
+import com.example.recipes.ui.theme.RecipiesTheme
 
 
-class RecipeActivity : ComponentActivity() {
+class RecipesActivity : ComponentActivity() {
     private val meal: Meal by lazy {
         intent?.getSerializableExtra(MEAL_ID) as Meal
     }
@@ -18,7 +18,7 @@ class RecipeActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent{
-            RecipesTheme{
+            RecipiesTheme{
                 MealScreen(meal = meal)
 
                 
@@ -28,7 +28,7 @@ class RecipeActivity : ComponentActivity() {
     }
     companion object{
         private const val MEAL_ID ="Meal Id"
-        fun newIntent(context: Context,meal: Meal) =Intent(context, RecipeActivity::class.java).apply {
+        fun newIntent(context: Context,meal: Meal) =Intent(context, RecipesActivity::class.java).apply {
             putExtra(MEAL_ID, meal)
         }
     }
